@@ -277,6 +277,15 @@ color: #D7A86E;}
 
 @media screen and (max-width: 479px){
 
+    #grilla-principal {
+        height: 500px;
+        display: grid;
+        grid-template-areas: 
+        "imagen"
+        "somos";
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(2,1fr);}
+
     *{background-color: white;}
     .h1{color:white; font-size: 40px;}
     .h3{color:white}
