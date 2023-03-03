@@ -294,8 +294,5 @@ color: #D7A86E;}
 
 }
 @media screen and (min-width: 701px) and (max-width: 1200px){
-    *{background-color: white;}
-    .h1{color:white}
-    .h3{color:white}
-    .somos {color: white}
+    
 }
