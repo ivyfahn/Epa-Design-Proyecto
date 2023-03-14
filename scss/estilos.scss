@@ -1,20 +1,51 @@
+
+/*Creación de variables*/
+$color-principal:#b68e5d;
 /*Selector Universal*/
+
+
+main { 
+    div{
+        div{
+            div{
+                .h1 {
+                    color: #b68e5d;
+                        font-family: "Nunito", sans-serif;
+                        font-size: 60px;
+                        font-weight: bold;
+                        text-align: center;
+                        background-color: black;
+                        margin: 10px;
+                }
+            }
+        }
+    }
+}
+    
+
 *{
-    background-color: #D7A86E;
+    background-color: $color-principal;
 }
 *{
     margin: 0;
     padding: 0;
-}       
+}   
+
+.navbar{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,79,9,1) 35%, rgba(255,194,0,1) 100%)
+}
+
 
 .h1{
-    color: #D7A86E;
+    color: $color-principal;
     font-family: 'Nunito', sans-serif;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
     background-color:black;
     margin: 10px;
+   
+
 }
 
 h2{
@@ -26,13 +57,14 @@ h2{
     text-align: center;
 }
 
+
 .h3 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-bottom: 20px;
     margin-top: 20px;
-    color: #D7A86E;
+    color: $color-principal;
     background-color: black;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -59,7 +91,35 @@ ul {
 }
 
 .btn {background-color: black;
-color: #D7A86E;}
+color: $color-principal;}
+
+/*Animaciones*/
+.imagen {
+    animation-name: imagen-epa;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    animation-duration: 2s;
+    animation-delay: 2s;
+
+}
+
+@keyframes imagen-epa {
+    0% {
+        width: 75px;
+    }
+    25% {
+        width: 50px;
+    }
+    50% {
+        width: 300px;
+    }
+    75% {
+        width: 400px;
+    }
+    100% {
+        width: 100px;
+    }
+}
 
 
 .somos {
@@ -67,7 +127,7 @@ color: #D7A86E;}
     font-family: 'Nunito', sans-serif;
     text-align: center;
     background-color: black;
-    color: #D7A86E;
+    color: $color-principal;
     display: flex;
     align-items: center;
     align-content: center;
@@ -79,7 +139,7 @@ color: #D7A86E;}
 
 .links {
     background-color: black;
-    color: #D7A86E;
+    color: $color-principal;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
@@ -249,7 +309,7 @@ color: #D7A86E;}
     color:black;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bolder;
-    font-size: 50px ;
+    font-size: 50px;
     
 }
 
