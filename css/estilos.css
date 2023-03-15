@@ -79,7 +79,7 @@ ul {
 }
 
 /*Animaciones*/
-.imagen {
+.imagen-epa {
   animation-name: imagen-epa;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
