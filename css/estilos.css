@@ -1,6 +1,26 @@
 @charset "UTF-8";
+/*Importaciones*/
+.navbar {
+  background-image: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(121, 79, 9) 35%, rgb(255, 194, 0) 100%);
+}
+
+.btn {
+  background-color: black;
+  color: #b68e5d;
+}
+
+.btn:hover {
+  background-color: #b68e5d;
+  color: black;
+}
+
+.nav-link:hover {
+  color: white;
+}
+
 /*Creación de variables*/
 /*Selector Universal*/
+/*Nesting*/
 main div div div .h1 {
   color: #b68e5d;
   font-family: "Nunito", sans-serif;
@@ -11,6 +31,7 @@ main div div div .h1 {
   margin: 10px;
 }
 
+/*Background*/
 * {
   background-color: #b68e5d;
 }
@@ -20,10 +41,8 @@ main div div div .h1 {
   padding: 0;
 }
 
-.navbar {
-  background-image: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(121, 79, 9) 35%, rgb(255, 194, 0) 100%);
-}
-
+/*Headers*/
+/*Mixin sin parámetros*/
 .h1 {
   color: #b68e5d;
   font-family: "Nunito", sans-serif;
@@ -57,6 +76,7 @@ h2 {
   text-align: center;
 }
 
+/*Párrafos*/
 .p {
   margin: 10px;
   color: black;
@@ -65,17 +85,13 @@ h2 {
   text-align: center;
 }
 
+/*Lista*/
 ul {
   color: black;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 20px;
   font-weight: bold;
   text-align: center;
-}
-
-.btn {
-  background-color: black;
-  color: #b68e5d;
 }
 
 /*Animaciones*/
@@ -129,6 +145,7 @@ ul {
   border-radius: 10px;
 }
 
+/*Bordes*/
 .border {
   border: 2px solid black;
 }
@@ -142,6 +159,7 @@ ul {
   padding: 10px 10px 10px 10px;
 }
 
+/*Grilla*/
 #grilla {
   display: grid;
   grid-template-areas: gráfico multimedial web branding naming;
@@ -174,6 +192,7 @@ ul {
   text-align: center;
 }
 
+/*Form*/
 .form {
   margin: 50px;
   width: 50px;
@@ -202,62 +221,12 @@ ul {
 .design {
   width: 120px;
   height: 40px;
-  border: 1px solid black;
+  border: 2px solid black;
   margin: 10px 10px 10px 10px;
   font-family: "Roboto", sans-serif;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
-
-.c1 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid black;
-  font-weight: bolder;
-  margin: 10px;
-}
-
-.c2 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid black;
-  font-weight: bolder;
-  margin: 10px;
-}
-
-.c3 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid black;
-  font-weight: bolder;
-  margin: 10px;
-}
-
-.c4 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid black;
-  font-weight: bolder;
-  margin: 10px;
-}
-
-.c5 {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  font-family: "Roboto", sans-serif;
-  border: 1px solid black;
-  font-weight: bolder;
-  margin: 10px;
 }
 
 #video {
@@ -284,26 +253,17 @@ ul {
   font-size: 50px;
 }
 
+/*Footer*/
 #pie {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   font-weight: bolder;
 }
 
 /*Pseudoclases*/
-/*General*/
-.btn:hover {
-  background-color: #D7A86E;
-  color: black;
-}
-
 /*Pseudoclase para Portfolio*/
 .portafolio:hover {
   cursor: pointer;
   width: 300px;
-}
-
-.nav-link:hover {
-  color: white;
 }
 
 @media screen and (max-width: 479px) {

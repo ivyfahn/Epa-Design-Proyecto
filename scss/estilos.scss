@@ -1,9 +1,13 @@
+/*Importaciones*/
+@import "colores";
+@import "navbar";
 
 /*Creación de variables*/
-$color-principal:#b68e5d;
+$bordes: 2px solid black;
+
 /*Selector Universal*/
 
-
+/*Nesting*/
 main { 
     div{
         div{
@@ -22,7 +26,7 @@ main {
     }
 }
     
-
+/*Background*/
 *{
     background-color: $color-principal;
 }
@@ -31,26 +35,27 @@ main {
     padding: 0;
 }   
 
-.navbar{
-    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,79,9,1) 35%, rgba(255,194,0,1) 100%)
-}
 
+/*Headers*/
 
-.h1{
+/*Mixin sin parámetros*/
+@mixin crearHeader(){
     color: $color-principal;
     font-family: 'Nunito', sans-serif;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
-    background-color:black;
+    background-color:$bg-color;
     margin: 10px;
-   
+}
 
+.h1{
+    @include crearHeader();
 }
 
 h2{
     margin-top: 100px;
-    color: black;
+    color: $bg-color;
     font-family: 'Nunito', sans-serif;
     font-size: 50px;
     font-weight: bold; 
@@ -65,7 +70,7 @@ h2{
     margin-bottom: 20px;
     margin-top: 20px;
     color: $color-principal;
-    background-color: black;
+    background-color: $bg-color;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
     font-weight: bold;
@@ -73,25 +78,23 @@ h2{
 
 }
 
+/*Párrafos*/
 .p {
     margin:10px;
-    color: black;
+    color: $bg-color;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size: 20px;
     text-align: center;
 
 }
-
+ /*Lista*/
 ul {
-    color: black;
+    color: $bg-color;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
 }
-
-.btn {background-color: black;
-color: $color-principal;}
 
 /*Animaciones*/
 .imagen-epa {
@@ -126,7 +129,7 @@ color: $color-principal;}
     font-size: 40px;
     font-family: 'Nunito', sans-serif;
     text-align: center;
-    background-color: black;
+    background-color:$bg-color;
     color: $color-principal;
     display: flex;
     align-items: center;
@@ -138,7 +141,7 @@ color: $color-principal;}
 
 
 .links {
-    background-color: black;
+    background-color: $bg-color;
     color: $color-principal;
     text-align: center;
     font-family: 'Roboto', sans-serif;
@@ -150,8 +153,9 @@ color: $color-principal;}
     border-radius: 10px;
 }
 
+/*Bordes*/
 .border{
-    border: 2px solid black;
+    border: $bordes;
 }
 
 /*Grid*/
@@ -166,6 +170,7 @@ color: $color-principal;}
 
 }
 
+/*Grilla*/
 #grilla {
     display: grid;
     grid-template-areas: 
@@ -181,7 +186,7 @@ color: $color-principal;}
     margin-top: 100px;
     margin-left: 100px;
     margin-right: 100px;
-    color: black;
+    color: $bg-color;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 20px;
     font-weight: bold;
@@ -200,6 +205,7 @@ color: $color-principal;}
 
 } 
 
+/*Form*/
 
 .form {
     margin: 50px;
@@ -229,7 +235,7 @@ color: $color-principal;}
 .design{
     width: 120px;
     height: 40px;
-    border: 1px solid black;
+    border: $bordes;
     margin: 10px 10px 10px 10px;
     font-family: 'Roboto', sans-serif;
     display: flex; 
@@ -237,56 +243,6 @@ color: $color-principal;}
     flex-wrap: wrap;
 }
 
-
-.c1 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: 'Roboto', sans-serif;
-    border: 1px solid black;
-    font-weight: bolder;
-    margin: 10px;
-}
-
-.c2 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: 'Roboto', sans-serif;
-    border: 1px solid black;
-    font-weight: bolder;
-    margin: 10px;
-}
-
-.c3 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: 'Roboto', sans-serif;
-    border: 1px solid black;
-    font-weight: bolder;
-    margin: 10px;
-}
-
-.c4 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: 'Roboto', sans-serif;
-    border: 1px solid black;
-    font-weight: bolder;
-    margin: 10px;
-}
-
-.c5 {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-family: 'Roboto', sans-serif;
-    border: 1px solid black;
-    font-weight: bolder;
-    margin: 10px;
-}
 
 
 #video {
@@ -313,6 +269,7 @@ color: $color-principal;}
     
 }
 
+/*Footer*/
 #pie {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: bolder;
@@ -320,19 +277,11 @@ color: $color-principal;}
 
 /*Pseudoclases*/
 
-    /*General*/
-.btn:hover {
-    background-color: #D7A86E ;
-    color: black;
-}
-    /*Pseudoclase para Portfolio*/
+  
+/*Pseudoclase para Portfolio*/
 .portafolio:hover {
     cursor: pointer;
     width: 300px;
-}
-
-.nav-link:hover {
-    color:white
 }
 
 @media screen and (max-width: 479px){

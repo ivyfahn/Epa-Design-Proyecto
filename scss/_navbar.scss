@@ -1,0 +1,15 @@
+.navbar{
+    background-image: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,79,9,1) 35%, rgba(255,194,0,1) 100%)
+}
+
+.btn {background-color: $bg-color;
+    color: $color-principal;}
+
+.btn:hover {
+    background-color: $color-principal ;
+    color: black;
+}
+
+.nav-link:hover {
+    color:white
+}
