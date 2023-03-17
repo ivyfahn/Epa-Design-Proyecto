@@ -270,9 +270,14 @@ ul {
   * {
     background-color: white;
   }
-  .h1 {
+  main div div div .h1 {
     color: white;
+    font-family: "Nunito", sans-serif;
     font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    margin: 10px;
   }
   .h3 {
     color: white;
@@ -288,8 +293,14 @@ ul {
   * {
     background-color: white;
   }
-  .h1 {
+  main div div div .h1 {
     color: white;
+    font-family: "Nunito", sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+    text-align: center;
+    background-color: black;
+    margin: 10px;
   }
   .h3 {
     color: white;
