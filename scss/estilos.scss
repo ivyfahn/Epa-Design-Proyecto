@@ -41,7 +41,7 @@ main {
 /*Mixin sin parámetros*/
 @mixin crearHeader(){
     color: $color-principal;
-    font-family: 'Nunito', sans-serif;
+    font-family:'Nunito', sans-serif;
     font-size: 60px;
     font-weight: bold;
     text-align: center;
@@ -54,10 +54,10 @@ main {
 }
 
 h2{
+    font-family:'Nunito', sans-serif;
+    font-size:50px;
     margin-top: 100px;
     color: $bg-color;
-    font-family: 'Nunito', sans-serif;
-    font-size: 50px;
     font-weight: bold; 
     text-align: center;
 }
@@ -70,6 +70,8 @@ h2{
     margin-bottom: 20px;
     margin-top: 20px;
     color: $color-principal;
+    font-family:'Roboto', sans-serif;
+    font-size: 30px;
     background-color: $bg-color;
     font-family: 'Roboto', sans-serif;
     font-size: 30px;
